@@ -3,7 +3,7 @@ import cv2
 from keras.models import load_model
 import numpy as np
 
-p=r'D:\python\workspace_machineLearning\facial emotion git\face_detect_model1.h5'
+p=r'D:\python\workspace_machineLearning\facial emotion git\face_detect_model1.h5' #path of your model
 model=load_model(p)
 cascade_path = pathlib.Path(cv2.__file__).parent.absolute()/ "data/haarcascade_frontalface_default.xml"
 print(cascade_path)
